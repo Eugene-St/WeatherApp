@@ -1,0 +1,36 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "NewAfterNoon.pdf"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "NewAfterNoon-3.pdf",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ]
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "NewNight.pdf",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ]
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template",
+    "preserves-vector-representation" : true
+  }
+}
