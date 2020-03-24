@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AfterNoon" translatesAutoresizingMaskIntoConstraints="NO" id="pNf-Na-jTG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newBAckground" translatesAutoresizingMaskIntoConstraints="NO" id="pNf-Na-jTG">
                                 <rect key="frame" x="0.0" y="-20" width="375" height="852"/>
                                 <color key="tintColor" name="Color"/>
                             </imageView>
@@ -29,10 +29,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-li-oSK">
-                                <rect key="frame" x="315.33333333333331" y="716" width="19.666666666666686" height="22"/>
+                                <rect key="frame" x="307" y="711" width="28" height="26.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="J7V-td-WHw"/>
+                                    <constraint firstAttribute="width" constant="28" id="fyv-SN-dKH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" name="Color"/>
-                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                                <state key="normal" backgroundImage="magnifyingglass.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3DE-f6-GIg"/>
                                 </connections>
@@ -47,14 +51,14 @@
                                             <constraint firstAttribute="width" constant="140" id="ynx-Lf-7be"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="67"/>
-                                        <color key="textColor" red="0.69589799642562866" green="0.1594846248626709" blue="0.08866795152425766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-VY-p69">
                                         <rect key="frame" x="150" y="0.0" width="100" height="80"/>
                                         <color key="tintColor" name="Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="58"/>
-                                        <color key="textColor" red="0.69589799642562866" green="0.1594846248626709" blue="0.08866795152425766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -65,13 +69,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxI-mw-wlf">
-                                <rect key="frame" x="185.33333333333334" y="717.66666666666663" width="100.00000000000003" height="20.333333333333371"/>
+                                <rect key="frame" x="187" y="717.66666666666663" width="100" height="20.333333333333371"/>
                                 <color key="tintColor" name="Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="iv6-M1-XFz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.69589799642562866" green="0.1594846248626709" blue="0.08866795152425766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-YQ-EYH">
@@ -81,14 +85,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="15.666666666666666"/>
                                         <color key="tintColor" name="Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.69589799642562866" green="0.1594846248626709" blue="0.08866795152425766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQO-dF-gQV">
                                         <rect key="frame" x="66" y="0.0" width="16" height="15.666666666666666"/>
                                         <color key="tintColor" name="Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.69589799642562866" green="0.1594846248626709" blue="0.08866795152425766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -98,19 +102,19 @@
                         <color key="tintColor" name="testColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RxI-mw-wlf" secondAttribute="bottom" constant="40" id="2D8-sy-6Va"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XDd-li-oSK" secondAttribute="bottom" constant="40" id="2y0-0Q-BlF"/>
                             <constraint firstItem="klN-nf-aO6" firstAttribute="top" secondItem="GR7-PA-11O" secondAttribute="bottom" constant="30" id="6vU-KJ-WSe"/>
                             <constraint firstAttribute="top" secondItem="pNf-Na-jTG" secondAttribute="top" constant="20" symbolic="YES" id="AQt-IY-3yq"/>
                             <constraint firstItem="GR7-PA-11O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="J2G-7u-U2J"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XDd-li-oSK" secondAttribute="trailing" constant="40" id="N8Z-G5-e5D"/>
-                            <constraint firstItem="XDd-li-oSK" firstAttribute="leading" secondItem="RxI-mw-wlf" secondAttribute="trailing" constant="30" id="Syr-rI-1ps"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XDd-li-oSK" secondAttribute="trailing" constant="40" id="R9d-Hk-PzU"/>
                             <constraint firstItem="aoA-YQ-EYH" firstAttribute="top" secondItem="klN-nf-aO6" secondAttribute="bottom" constant="2" id="XUF-hf-iBy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XDd-li-oSK" secondAttribute="bottom" constant="40" id="YZT-fV-LP0"/>
                             <constraint firstItem="aoA-YQ-EYH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adR-6K-wM9"/>
                             <constraint firstItem="GR7-PA-11O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eou-Py-hDg"/>
                             <constraint firstItem="pNf-Na-jTG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fTI-Dg-6wV"/>
                             <constraint firstItem="pNf-Na-jTG" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="20" symbolic="YES" id="gJ0-Vo-F1b"/>
                             <constraint firstItem="pNf-Na-jTG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h9b-Vu-BT2"/>
                             <constraint firstItem="klN-nf-aO6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mX9-uF-WiU"/>
+                            <constraint firstItem="XDd-li-oSK" firstAttribute="leading" secondItem="RxI-mw-wlf" secondAttribute="trailing" constant="20" id="opL-IF-gTb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -127,11 +131,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AfterNoon" width="375" height="667"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="newBAckground" width="414" height="736"/>
         <image name="smoke.fill" catalog="system" width="64" height="44"/>
         <namedColor name="Color">
-            <color red="0.69589799642562866" green="0.1594846248626709" blue="0.08866795152425766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="testColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

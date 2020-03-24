@@ -14,7 +14,6 @@ class NetworkWeatherManager {
   enum RequestType {
     case cityName(city: String)
     case coordinate(lattitude: CLLocationDegrees, longtitude: CLLocationDegrees)
-    
   }
   
   var onCompletion: ((CurrentWeather) -> Void)?

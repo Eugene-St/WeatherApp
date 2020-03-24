@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "NewAfterNoon.pdf"
+      "filename" : "NewBackground-1.pdf"
     },
     {
       "idiom" : "universal",
-      "filename" : "NewAfterNoon-3.pdf",
+      "filename" : "NewBackground.pdf",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -16,7 +16,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "NewNight.pdf",
+      "filename" : "BackgroundDark.pdf",
       "appearances" : [
         {
           "appearance" : "luminosity",
