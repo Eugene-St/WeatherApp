@@ -9,7 +9,7 @@
 import UIKit
 
 extension ViewController {
-  func showAlertController(withTitle title: String?, message: String?, style: UIAlertController.Style) {
+  func showAlertController(withTitle title: String?, message: String?, style: UIAlertController.Style, completionHandler: @escaping (String) -> Void) {
     let alert = UIAlertController(title: title, message: message, preferredStyle: style)
     alert.addTextField { tf in
       let cities = ["San Francisco", "Moscow", "New York", "Stambul", "Viena"]
@@ -20,7 +20,10 @@ extension ViewController {
       let textField = alert.textFields?.first
       guard let cityName = textField?.text else { return }
       if cityName != "" {
-        print("search infor for the \(cityName)")
+//        NetworkWeatherManager.fetchCurrentWeather(for: cityName)
+        let city = cityName.split(separator: " ").joined(separator: "%20")
+        completionHandler(city)
+        
       }
     }
     
